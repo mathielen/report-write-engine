@@ -1,0 +1,21 @@
+{
+  "ROOT": {
+    "ROOT_CAPTION": "I am Root!",
+    "LEVEL1": [
+      {
+        "LEVEL1_CAPTION": "I am 1",
+        "LEVEL2": [
+          {
+            "LEVEL2_CAPTION": "I am 1.1"
+          },
+          {
+            "LEVEL2_CAPTION": "I am 1.2"
+          }
+        ]
+      }
+    ]
+  },
+  "FOOTER": {
+    "FOOTER": "I am the Footer"
+  }
+}

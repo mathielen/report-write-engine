@@ -1,0 +1,26 @@
+[
+  [
+    "ROOT",
+    "TEXT",
+    "",
+    ""
+  ],
+  [
+    "LEVEL1",
+    "{{LEVEL1_CAPTION}}",
+    "",
+    ""
+  ],
+  [
+    "LEVEL2-R",
+    "{{LEVEL2_CAPTION}}",
+    "",
+    ""
+  ],
+  [
+    "ROOT_FOOTER",
+    "",
+    "",
+    ""
+  ]
+]

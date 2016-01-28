@@ -1,0 +1,37 @@
+{
+  "name": "mathielen/report-write-engine",
+  "type": "library",
+  "description": "PHP Report Write Engine, using PHPOffice/PHPExcel lib and 'named ranges' of excel files as partial templates for generating reports.",
+  "keywords": [
+    "excel",
+    "phpexcel",
+    "report",
+    "template",
+    "spreadsheet",
+    "document",
+    "ranges",
+    "namedrange"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Markus Thielen",
+      "email": "markus@logicx.de"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "phpoffice/phpexcel": "~1.8",
+    "psr/log": "~1.0",
+    "beberlei/assert": "~2.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable",
+    "monolog/monolog": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mathielen\\ReportWriteEngine\\": "src/Mathielen/ReportWriteEngine/"
+    }
+  }
+}

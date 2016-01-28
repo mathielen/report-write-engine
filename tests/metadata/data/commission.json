@@ -1,0 +1,35 @@
+{
+  "HEADER": {
+    "LAST_MODIFIED": "LAST_MODIFIED",
+    "FILTER": "FILTER"
+  },
+  "ROOT": {
+    "MONTHS": [
+      {
+        "MONTH_NAME": "November",
+        "POSITIONS": [
+          {
+            "POSITION_NAME": "POS1",
+            "RATE": "1%"
+          }
+        ],
+        "SERVICEPARTNER": [
+          {
+            "NAME": "SP2",
+            "COUNTRY": "UK",
+            "TOTAL": "999",
+            "SERVICEPARTNERPOSITION": [
+              {
+                "VALUE": 5,
+                "CURRENCY": "EUR"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "FOOTER": {
+    "FOOTER": "FOOTER"
+  }
+}

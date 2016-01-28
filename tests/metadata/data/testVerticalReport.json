@@ -1,0 +1,132 @@
+{
+  "HEADER": {
+    "LAST_MODIFIED": "2015-12-18",
+    "FILTER": "Some filters"
+  },
+  "ROOT": [
+    {
+      "MONTH_NAME": "November",
+      "POSITIONS": [
+        {
+          "POSITION_NAME": "Position 1",
+          "RATE": "5%"
+        },
+        {
+          "POSITION_NAME": "Position 2",
+          "RATE": "3%"
+        }
+      ],
+      "SERVICEPARTNER": [
+        {
+          "NAME": "Partner 1",
+          "COUNTRY": "Germany",
+          "TOTAL": 999,
+          "SERVICEPARTNERPOSITION": [
+            {
+              "VALUE": 111,
+              "CURRENCY": "EUR"
+            },
+            {
+              "VALUE": 222,
+              "CURRENCY": "EUR"
+            }
+          ]
+        },
+        {
+          "NAME": "Partner 2",
+          "COUNTRY": "US",
+          "TOTAL": 888,
+          "SERVICEPARTNERPOSITION": [
+            {
+              "VALUE": 333,
+              "CURRENCY": "USD"
+            },
+            {
+              "VALUE": 444,
+              "CURRENCY": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "MONTH_NAME": "December",
+      "POSITIONS": [
+        {
+          "POSITION_NAME": "Position 1",
+          "RATE": "5%"
+        },
+        {
+          "POSITION_NAME": "Position 2",
+          "RATE": "3%"
+        },
+        {
+          "POSITION_NAME": "Position 3",
+          "RATE": "1%"
+        }
+      ],
+      "SERVICEPARTNER": [
+        {
+          "NAME": "Partner 1",
+          "COUNTRY": "Germany",
+          "TOTAL": 333,
+          "SERVICEPARTNERPOSITION": [
+            {
+              "VALUE": 555,
+              "CURRENCY": "EUR"
+            },
+            {
+              "VALUE": 666,
+              "CURRENCY": "EUR"
+            },
+            {
+              "VALUE": 777,
+              "CURRENCY": "EUR"
+            }
+          ]
+        },
+        {
+          "NAME": "Partner 2",
+          "COUNTRY": "US",
+          "TOTAL": 444,
+          "SERVICEPARTNERPOSITION": [
+            {
+              "VALUE": 888,
+              "CURRENCY": "USD"
+            },
+            {
+              "VALUE": 999,
+              "CURRENCY": "USD"
+            },
+            {
+              "VALUE": 101,
+              "CURRENCY": "USD"
+            }
+          ]
+        },
+        {
+          "NAME": "Partner 3",
+          "COUNTRY": "UK",
+          "TOTAL": 555,
+          "SERVICEPARTNERPOSITION": [
+            {
+              "VALUE": 102,
+              "CURRENCY": "GBP"
+            },
+            {
+              "VALUE": 103,
+              "CURRENCY": "GBP"
+            },
+            {
+              "VALUE": 104,
+              "CURRENCY": "GBP"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "FOOTER": {
+    "FOOTER": "My Footer"
+  }
+}

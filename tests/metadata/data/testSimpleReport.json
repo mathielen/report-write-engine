@@ -1,0 +1,11 @@
+{
+  "HEADER": {
+    "HEADER": "I am the Header"
+  },
+  "ROOT": {
+    "ROOT": "I am the root"
+  },
+  "FOOTER": {
+    "FOOTER": "I am the Footer"
+  }
+}
