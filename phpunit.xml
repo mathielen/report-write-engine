@@ -11,9 +11,6 @@
             <directory>tests/unit</directory>
             <directory>tests/integration</directory>
         </testsuite>
-        <testsuite name="Functional">
-            <directory>tests/functional</directory>
-        </testsuite>
     </testsuites>
 
     <php>

@@ -36,14 +36,14 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
             new HorizontalRenderer()
         );
 
-        $targetRepo = new ExcelFileRepository(__DIR__ . '/../metadata/output');
-        $this->templateRepo = new ExcelFileRepository(__DIR__ . '/../metadata/template');
+        $targetRepo = new ExcelFileRepository('tests/metadata/output');
+        $this->templateRepo = new ExcelFileRepository('tests/metadata/template');
         $this->sut = new ExcelReportWriter($targetRepo, $this->templateRepo, $rendererRepository, $logger);
     }
 
     public function testSimpleReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/testSimpleReport.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/testSimpleReport.json'), true);
 
         $reportConfig = new ReportConfig('simple.xlsx', 'simple-output.xlsx');
         $this->sut->write($reportData, $reportConfig);
@@ -51,7 +51,7 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
 
     public function testVerticalSinglelevelReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/testSinglelevelReport.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/testSinglelevelReport.json'), true);
 
         $reportConfig = new ReportConfig('singlelevel.xlsx', 'singlelevel-output.xlsx');
         $this->sut->write($reportData, $reportConfig);
@@ -59,7 +59,7 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
 
     public function testVerticalMultilevelReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/testMultilevelReport.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/testMultilevelReport.json'), true);
 
         $reportConfig = new ReportConfig('multilevel.xlsx', 'multilevel-output.xlsx');
         $this->sut->write($reportData, $reportConfig);
@@ -67,7 +67,7 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
 
     public function testVerticalMultiSamelevelReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/testMultiSamelevelReport.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/testMultiSamelevelReport.json'), true);
 
         $reportConfig = new ReportConfig('multisamelevel.xlsx', 'multisamelevel-output.xlsx');
         $this->sut->write($reportData, $reportConfig);
@@ -75,7 +75,7 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
 
     public function testHorizontalSinglelevelReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/testSinglelevelReport.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/testSinglelevelReport.json'), true);
 
         $this->templateRepo->setMetadata('horizontal-singlelevel.xlsx', ['LEVEL1'=> RendererInterface::ORIENTATION_HORIZONTAL]);
 
@@ -85,7 +85,7 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
 
     public function testHorizontalMultilevelReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/testMultilevelReport.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/testMultilevelReport.json'), true);
 
         $this->templateRepo->setMetadata('horizontal-multilevel.xlsx', ['LEVEL2'=> RendererInterface::ORIENTATION_HORIZONTAL]);
 
@@ -95,7 +95,7 @@ class ExcelReportWriterTest extends \PHPUnit_Framework_TestCase
 
     public function testFinalReport()
     {
-        $reportData = json_decode(file_get_contents(__DIR__ . '/../metadata/data/commission.json'), true);
+        $reportData = json_decode(file_get_contents('tests/metadata/data/commission.json'), true);
 
         $this->templateRepo->setMetadata('commission.xlsx', ['SERVICEPARTNER'=> RendererInterface::ORIENTATION_HORIZONTAL]);
 
