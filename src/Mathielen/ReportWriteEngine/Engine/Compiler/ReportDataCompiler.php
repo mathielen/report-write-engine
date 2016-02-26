@@ -19,7 +19,7 @@ class ReportDataCompiler
 
     protected function translate($templateValue, array $data)
     {
-        $translated = $templateValue;
+        $translated = null;
 
         if (preg_match('/{{(\w+)}}/', $templateValue, $regs)) {
             $key = $regs[1];
