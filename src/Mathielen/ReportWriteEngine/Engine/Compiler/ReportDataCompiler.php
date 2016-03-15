@@ -19,7 +19,7 @@ class ReportDataCompiler
 
     protected function translate($templateValue, array $data)
     {
-        $translated = null;
+        $translated = $templateValue;
 
         if (preg_match('/{{(\w+)}}/', $templateValue, $regs)) {
             $key = $regs[1];
@@ -27,6 +27,7 @@ class ReportDataCompiler
                 $translated = preg_replace('/{{(\w+)}}/', $data[$key], $templateValue);
             } else {
                 $this->logger->notice("Could not translate $templateValue", ['data-keys' => array_keys($data)]);
+                $translated = null;
             }
         }
 
