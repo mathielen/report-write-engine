@@ -42,7 +42,7 @@ class ReportRenderer
 
     private static function isDeepArray(array $array)
     {
-        return !empty($array) && is_numeric(array_keys($array)[0]);
+        return !empty($array) && is_array(array_values($array)[0]);
     }
 
     /**
