@@ -82,7 +82,7 @@ class Canvas extends \ArrayObject
 
     private function set($x, $y, $data)
     {
-        $this->logger->debug("Write value to canvas [$x,$y] = " . (is_array($data) ? $data['value'] : $data));
+        //$this->logger->debug("Write value to canvas [$x,$y] = " . (is_array($data) ? $data['value'] : $data));
 
         $this[$y][$x] = $data;
     }
